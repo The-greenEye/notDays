@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="في هذا الموقع البسيط يمكنك تسجيل افاكارك وتخزينها على الانترنت مجانا بحيث بعد مرور فترة من زمن يمكنك مراجعة ما فكرت به">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="icon" href="img/icon.png" />
+    <title>My Note | By Mohamad Homsi</title>
+  </head>
+  <body>
+    <div class="boos">
+      <section>
+        <div class="nav-website">
+          <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="my note.html"><img src="img/my note.png" width="100" height="100" alt="" style="object-fit: cover" /></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" color="white" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="justify-content: space-between;display: flex;align-items: center; width: 100%;">
+                  <div class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="my note.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="typeing.html">type note</a>
+                    </li>
+                  </div>
+                  <div>
+                    <li class="nav-item" onclick="localStorage.clear() , location.reload()" style="cursor: pointer;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" color="white" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                        <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
+                      </svg>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section>
+        <div class="row typeing p-5 d-flex" style="width: 100%; justify-content: space-between; align-items: center" id="inbox"></div>
+      </section>
+      <section>
+        <footer class="p-2 bg-dark" style="position: fixed; bottom: 0; width: 100%; display: flex; justify-content: space-around">
+          <div class="sec-one">
+            <div class="row">
+              <b class="text-info">All Right To &copy;<a href="#" target="_blank" style="font-weight: 900; font-style: oblique; color: #fff; text-decoration: none">mohamad homsi</a></b>
+            </div>
+          </div>
+          <div class="sec-tow">
+            <a href="typeing.html">
+              <button class="btn btn-light" style="width: 80px; height: 80px; border-radius: 50%; position: absolute; bottom: 12px; right: 15px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" color="black" fill="currentColor" class="bi bi-folder-plus" viewBox="0 0 16 16">
+                  <path d="m.5 3 .04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2m5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98z" />
+                  <path d="M13.5 9a.5.5 0 0 1 .5.5V11h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V12h-1.5a.5.5 0 0 1 0-1H13V9.5a.5.5 0 0 1 .5-.5" />
+                </svg>
+              </button>
+            </a>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <script>
+      let sermoth = JSON.parse(localStorage.getItem("dataTypeing"));
+      let cartona = document.getElementById("inbox");
+      // دالة لعرض البيانات
+      function loopData() {
+        let cart = "";
+        for (let i = 0; i < sermoth.length; i++) {
+          cart += `
+      <div class="card col-lg-3 col-sm-12">
+        <div class="align">
+          <span class="red"></span>
+          <span class="yellow"></span>
+          <span class="green"></span>
+        </div>
+        <h1>${sermoth[i].title}</h1>
+        <p>${sermoth[i].about}</p>
+      </div>
+    `;
+        }
+        cartona.innerHTML = cart;
+      }
+      loopData();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
